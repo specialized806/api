@@ -155,7 +155,7 @@ https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=*&pageSize=100&co
 #### Required parameters
 - `dateIssuedStartDate`: the earliest package you are requesting by dateIssued – YYYY-MM-DD
 - `offsetMark`: starting record. The initial request should always be `*`, and the API will provide the correct offsetMark value for the next page's information in the `nextPage` key.
-  - **Note:** offsetMark effectively replaces the `offset` parameter. The advantage of the the `offsetMark` is that it allows traversals of the results past the first 10,000 recors
+  - **Note:** offsetMark effectively replaces the `offset` parameter. The advantage of the `offsetMark` is that it allows traversals of the results past the first 10,000 recors
 - `pageSize`: number of records to return per request (e.g. 10)
 - `collection`: comma-separated list of collections that you are requesting, e.g. https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=0&pageSize=100&collection=BILLS,BILLSTATUS&api_key=DEMO_KEY  - see [/collections](https://api.govinfo.gov/collections?api_key=DEMO_KEY) for a list of collections by code and human-readable name.
 
